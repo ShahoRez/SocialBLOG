@@ -1,0 +1,54 @@
+{% extends 'base.html' %}
+{% block content %}
+    
+    <h2>Welcome to Social BLOG</h2>
+    {% if current_user.is_authenticated %}
+            <h3> hello {{ current_user.username }}</h3>
+    {% endif %}
+    
+    
+    <div class="container">
+        {% for post in blog_posts.items %}
+        
+        
+        <div class="card" style="width: 100%;">
+            <div class="card-body">
+                <h2><a href="{{url_for('blog_posts.blog_post', blog_post_id=post.id)}}"> {{post.title|e}} </a> </h2>
+                <small>Posted by <a href="{{ url_for('users.user_posts', username=post.author.username) }}">{{ post.author.username|e}} </a> on {{ post.date.strftime('%B %d, %Y') }}</small>
+                <div>
+                    <p>
+                        {{ post.text|truncate(300)|e }}
+                        <a href="{{url_for('blog_posts.blog_post', blog_post_id=post.id)}}">[Read More]</a>
+                    </p>
+                </div>
+
+                
+            
+            </div>
+        </div>
+
+        
+        {% endfor %}
+
+        <div align="center">
+            <nav aria-label="Page navigation">
+              <ul class="pagination justify-content-center">
+                {% for page_num in blog_posts.iter_pages(right_edge=1, left_edge=1, left_current=1, right_current=1) %}
+                        {% if blog_posts.page == page_num %}
+                                <li class="page-item disabled">{{page_num}}</li>
+
+                        {% else %}
+                        <li class="page-item">
+                            <a class="page-link" href="{{ url_for('core.index', page=page_num) }}">{{ page_num }}</a>
+                        </li>        
+                        {% endif %}
+
+                        
+                {% endfor %}
+                
+              </ul>
+            </nav>
+        </div>
+    </div>
+{% endblock %}
+

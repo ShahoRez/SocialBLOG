@@ -1,0 +1,78 @@
+.center {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.form-group-100  {
+    width: 100% !important; /* Example to limit width */
+    display: block;
+    height: calc(20em + .75rem + 2px);
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.form-control{
+    width: 50% !important;
+}
+
+.flashes {
+    list-style-type: none;
+    padding: 0;
+}
+
+.flashes li {
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    color: white; /* Text color */
+}
+
+.flashes .success {
+    background-color: green; /* Green for success */
+}
+
+.flashes .danger {
+    background-color: red; /* Red for danger */
+}
+
+/* Optional: Add more styles for other categories */
+.flashes .info {
+    background-color: blue; /* Blue for info */
+}
+
+.img-container {
+        width: 150px; /* Set a width */
+        height: 300px; /* Set a height */
+        
+}
+
+.img-container img {
+        width: 60%; /* Makes the image fill the container */
+        height: auto; /* Maintains aspect ratio */
+        border-radius: 9.3rem !important;
+}
+
+.card{
+    margin: 20px !important;
+}
+
+.btn{
+    padding: 0.375rem 2.75rem !important;
+}
+
+p {
+    line-height: 2rem;
+    text-align: justify;
+}
+
+li.page-item.disabled {
+    padding: .5rem .75rem;
+}

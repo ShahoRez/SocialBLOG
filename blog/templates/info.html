@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% block content %}
+    {% if current_user : %}
+            <h1> hello {{current_user.username}} </h1>
+    {% endif %}
+    
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, officia distinctio dicta adipisci temporibus, nobis ea accusamus est fugit sint architecto officiis, sequi sapiente velit autem asperiores. Quisquam, debitis id.</p>
+{% endblock %}
+

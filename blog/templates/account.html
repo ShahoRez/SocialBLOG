@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="fa fa-align-center" aria-hidden="true">
+    <h1 class="text-center">Welcome to the page for {{current_user.username}}</h1>
+    <br>
+    <div style="display: flex;">
+        <div style="flex: 1; padding: 20px;">
+            <div class="container">
+                <form method="POST" action="" enctype="multipart/form-data">
+                    {{ form.hidden_tag() }}
+                    <div class="form-group">
+                        {{ form.username.label }}
+                        {{ form.username(class_='form-control') }}
+                    </div>
+                    <div class="form-group">
+                        {{ form.email.label }}
+                        {{ form.email(class_='form-control') }}
+                    </div>
+                    <div class="form-group">
+                        {{ form.profile_image.label }}
+                        {{ form.profile_image(class_='form-control') }}
+                    </div>
+                    <div class="form-group">
+                        {{ form.submit(class_='btn btn-primary') }}
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div style="flex: 1; text-align: center; align-content:center; " class="img-container">
+            <img src="{{profile_image}}"  alt="profile_image" style="max-width: 100%; height: auto;">
+        </div>
+    </div>
+</div>
+{% endblock %}
+
