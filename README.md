@@ -4,6 +4,8 @@
 # Social Blog with Flask
 
 ![Example Image](blog/static/SocialBLOG.png)
+![Screenshot](/blog/static/SocialBLOG.png)
+
 
 
 Welcome to the repository for our social blogging platform, built with Flask! This project aims to provide a simple yet powerful blogging platform where users can share their thoughts, interact with others, and build a community around their interests.
