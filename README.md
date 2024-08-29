@@ -40,13 +40,15 @@ $ flask run
 This project is licensed under the MIT License (see the
 [LICENSE](LICENSE) file for details).
 
-```markdown
-# Social Blog with Flask
-
 ![Example Image](blog/static/SocialBLOG.png)
 ![Screenshot](https://news-cdn.varzesh3.com/pictures/2024/08/28/A/4mfskxhp.jpg?w=791)
 
 ![Screenshot](https://helloflask.com/screenshots/sayhello.png)
+
+```markdown
+# Social Blog with Flask
+
+
 
 
 
