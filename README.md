@@ -4,7 +4,7 @@
 # Social Blog with Flask
 
 ![Example Image](blog/static/SocialBLOG.png)
-![Screenshot](https://raw.githubusercontent.com/ShahoRez/SocialBLOG/master/blog/static/SocialBLOG.png)
+![Screenshot](https://news-cdn.varzesh3.com/pictures/2024/08/28/A/4mfskxhp.jpg?w=791)
 
 
 
