@@ -5,6 +5,8 @@
 
 ![Example Image](blog/static/SocialBLOG.png)
 ![Screenshot](/blog/static/SocialBLOG.png)
+![Screenshot](static/SocialBLOG.png)
+![Screenshot](/static/SocialBLOG.png)
 
 
 
