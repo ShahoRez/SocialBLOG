@@ -4,9 +4,8 @@
 # Social Blog with Flask
 
 ![Example Image](blog/static/SocialBLOG.png)
-![Screenshot](/blog/static/SocialBLOG.png)
-![Screenshot](https://github.com/ShahoRez/SocialBLOG/blob/master/blog/static/SocialBLOG.png)
-![Screenshot](blog/static/SocialBLOG.png)
+![Screenshot](https://raw.githubusercontent.com/ShahoRez/SocialBLOG/master/blog/static/SocialBLOG.png)
+
 
 
 
